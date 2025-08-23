@@ -46,7 +46,7 @@ const CreatePost = () => {
   formData.append("rating", rating);
   formData.append("description", description);
   formData.append("location", location);
-  formData.append("file", image); // <-- file from input
+  formData.append("image", image); // <-- file from input
 
   await axios.post("https://backend-of-spot-quote.onrender.com/api/testmonials", formData, {
     headers: { "Content-Type": "multipart/form-data" },
