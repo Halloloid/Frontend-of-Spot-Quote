@@ -30,7 +30,7 @@ const Card = ({ item, setData }) => {
           </div>
           <div>
 
-            <img src={`https://backend-of-spot-quote.onrender.com${item.image}`} className='w-full h-full object-cover rounded-br-3xl rounded-tr-3xl'/>
+            <img src={item.image} className='w-full h-full object-cover rounded-br-3xl rounded-tr-3xl'/>
           </div>
         </div>
       </div>

@@ -38,7 +38,7 @@ const PostDetails = () => {
     <div className='w-full flex justify-center'>
       <div className='w-[1000px] h-[600px]  bg-[#E8C4B8] rounded-4xl shadow-lg p-5'>
         <div className='grid grid-cols-2 gap-5 h-[60%]'>
-          <img src ={`https://backend-of-spot-quote.onrender.com${detail.image}`} className=' h-full object-cover rounded-4xl'/>
+          <img src ={detail.image} className=' h-full object-cover rounded-4xl'/>
           <div>
             <h1 className='font-bold text-6xl mt-5 text-black'>{detail.item}</h1>
             <h1 className='font-bold text-3xl mt-5'>{detail.type}</h1>
