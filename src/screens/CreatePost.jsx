@@ -11,7 +11,7 @@ const CreatePost = () => {
     const [rating,setRating] = useState("");
     const [description,setDescription] = useState("");
     const [location,setLocation] = useState("");
-    const [image,setImage] = useState("");
+    const [image,setImage] = useState(null);
 
     const navigate = useNavigate();
 
@@ -46,7 +46,7 @@ const CreatePost = () => {
   formData.append("rating", rating);
   formData.append("description", description);
   formData.append("location", location);
-  formData.append("image", file); // <-- file from input
+  formData.append("file", image); // <-- file from input
 
   await axios.post("https://backend-of-spot-quote.onrender.com/api/testmonials", formData, {
     headers: { "Content-Type": "multipart/form-data" },
