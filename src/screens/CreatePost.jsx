@@ -149,7 +149,7 @@ const CreatePost = () => {
 
                     </div>
                     <div className='m-2'>
-                    <label className='text-[32px] font-custom '>Location</label><span className='ms-4'>*paste the Google map location link</span><br/>
+                    <label className='text-[32px] font-custom '>Location</label><span className='ms-4'>* Write Specific Location For Users</span><br/>
                     <input
                     value={location}
                     type='text'
